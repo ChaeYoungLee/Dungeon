@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dungeon</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<style>
+	html{font-family: 'Anton', sans-serif;}
+	body{ background: 
+		-webkit-linear-gradient(black 1px, transparent 1px),
+		-webkit-linear-gradient(0deg, black 15px, brown 10px);background-size:80px 80px;}
+
+
+	#meshi{position: absolute; top: 50%; left: 50%; margin-left: -300px; margin-top: -150px;}
+	#nabe{position: absolute; width: 150px; left: 15%; top: 30px; cursor: pointer;}
+	#tart{position: absolute; width: 150px; left: 50%; margin-left: -125px; top: 30px; cursor: pointer;}
+	#rice{position: absolute; width: 150px; left: 75%; top: 75%; cursor: pointer;}
+	#burger{position: absolute; width: 150px; left: 15%; top: 50%; margin-top:-100px; cursor: pointer; }
+	#jjim{position: absolute; left: 15%; top: 75%; width: 150px; cursor: pointer; }
+	#gui{position: absolute; width: 150px; top: 50%; margin-top: -100px; left: 75%; cursor: pointer;}
+
+	#mushroom{position: absolute; top: 30px; left: 75%; cursor: pointer;
+		
+		animation: run 0.5s;
+		animation-play-state: paused;
+		animation-fill-mode: forwards;}
+
+		@keyframes run{
+		0%{transform: translate(0);}
+		to{transform: translate(800px);}
+		}
+
+	#re_1{position: absolute;  top: 120%; left: 50%; margin-left: -210px; margin-top: -100px;
+		width: 420px;
+
+	animation: up 1s;
+		animation-play-state: paused;
+		animation-fill-mode: forwards;
+		animation-direction: normal;
+		}
+
+		@keyframes up{
+			from{top: 120%; opacity: 0; }
+			to{top: 50%;  opacity: 1;}
+		}
+
+	.blinking{ animation:blink 1s ease-in-out infinite alternate; font-size: 8em; color: white; }
+	@keyframes blink{
+   	 0% {opacity:0;}
+   	 100% {opacity:1;}
+}
+
+
+
+
+		
+</style>
+</head>
+<body>
+	
+
+	<span class="image blinking">Dungeon Meshi</span>
+
+	<img src="dungeon-meshi.png" id="meshi" style="width: 600px;">
+  	<img src="nabe.png" id="nabe">
+  	<img src="tart.png" id="tart">
+  	<img src="rice.png" id="rice">
+  	<img src="burger.png" id="burger">
+  	<img src="jjim.png" id="jjim">
+  	<img src="gui.png" id="gui">
+  	<img src="mushroom.png" id="mushroom" >
+
+  	<img src="tart_re.jpg" id="re_1">
+
+	<script>
+
+		mushroom.onclick = function(){
+			mushroom.style.animationPlayState = "running";
+			setTimeout(function() 
+				{alert("버섯이 도망쳤다!");}, 1000);
+			
+		}
+
+
+		nabe.onclick = function(){
+
+
+
+		}
+
+		tart.onclick = function(){
+
+		re_1.style.animationPlayState = "running";
+		
+
+
+		}
+		rice.onclick = function(){
+
+		}
+		burger.onclick = function(){
+
+		}
+
+		jjim.onclick = function(){
+
+		}
+
+		gui.onclick = function(){
+
+		}
+
+
+	</script>
+
+</body>
+</html>
